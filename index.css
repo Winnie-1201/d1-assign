@@ -1,0 +1,165 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  margin: 20px auto;
+  /* border: 1px solid black; */
+}
+
+.form-container {
+  width: 420px;
+  margin: 0 auto;
+  /* border: 1px solid pink; */
+  padding: 40px;
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full-length {
+  width: 100%;
+}
+
+input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid rgb(164, 164, 164);
+  padding: 4px 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.box-shadow:focus {
+  box-shadow: 0 0 5px rgb(65, 133, 206);
+  outline: none;
+  border: 1px solid rgb(65, 133, 206);
+}
+
+.half-width {
+  width: 48%;
+}
+
+.two-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.check-text {
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.text {
+  font-size: 12px;
+  width: 80%;
+  line-height: 16px;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.register {
+  border: 1px solid white;
+  background-color: rgb(65, 133, 206);
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.terms {
+  color: rgb(65, 133, 206);
+}
+
+.bt-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bt-regist,
+.bt-signin {
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid white;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.bt-regist {
+  background-color: rgb(65, 133, 206);
+}
+
+.bt-signin {
+  background-color: rgb(107, 185, 107);
+}
+
+@media screen and (max-width: 500px) {
+  .form-container {
+    padding: 0px;
+    width: 100%;
+  }
+  /* }
+
+@media screen and (max-width: 300px) { */
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkbox,
+  .text {
+    width: 100%;
+  }
+
+  .text {
+    margin-bottom: 16px;
+    margin-left: 4px;
+  }
+
+  .two-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .half-width {
+    width: 100%;
+  }
+
+  .mb-16-300 {
+    margin-bottom: 16px;
+  }
+}
